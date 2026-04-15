@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Milton Hardwoods – Premium firewood delivered in Newfoundland. $175 per cord including delivery. Reliable local service for your home heating, wood stove, or fire pit needs.">
+    <title>Milton Hardwoods | Premium Firewood Delivery in Newfoundland</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Playfair+Display:wght@700&amp;display=swap');
+
+        :root {
+            --tw-color-primary: #2e5c3f;
+        }
+
+        .tail-container * {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+
+        .heading-font {
+            font-family: 'Playfair Display', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(46, 92, 63, 0.85), rgba(46, 92, 63, 0.85)), url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
+        }
+
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #2e5c3f;
+            transform: translateY(-1px);
+        }
+
+        .section-header {
+            position: relative;
+        }
+
+        .section-header:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background-color: #2e5c3f;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body class="tail-container">
+    <!-- NAVBAR -->
+    <nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto">
+            <div class="px-6 py-5 flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center gap-x-3">
+                    <div class="w-10 h-10 bg-[#2e5c3f] text-white rounded-xl flex items-center justify-center text-2xl shadow-inner">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <div>
+                        <h1 class="heading-font text-2xl font-bold tracking-tight text-[#2e5c3f]">Milton Hardwoods</h1>
+                        <p class="text-xs text-stone-500 -mt-1 tracking-[1px]">FIREWOOD • NEWFOUNDLAND</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="#about" class="nav-link text-stone-700">About Oliver</a>
+                    <a href="#services" class="nav-link text-stone-700">Services</a>
+                    <a href="#pricing" class="nav-link text-stone-700">Pricing</a>
+                    <a href="#why-us" class="nav-link text-stone-700">Why Choose Us</a>
+                    <a href="#contact" class="nav-link text-stone-700">Contact</a>
+                </div>
+
+                <!-- Contact Bar -->
+                <div class="flex items-center gap-x-4">
+                    <a href="tel:7094279888"
+                       class="hidden sm:flex items-center gap-x-2 bg-[#2e5c3f] hover:bg-[#234a32] text-white text-sm font-semibold px-6 py-3 rounded-2xl transition-colors">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>(709) 427-9888</span>
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button onclick="toggleMobileMenu()"
+                            class="md:hidden w-11 h-11 flex items-center justify-center text-2xl text-stone-700 hover:text-[#2e5c3f]">
+                        <i class="fa-solid fa-bars" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden border-t bg-white px-6 py-4">
+                <div class="flex flex-col gap-y-4 text-sm font-medium">
+                    <a href="#about" onclick="toggleMobileMenu()" class="py-2 text-stone-700">About Oliver</a>
+                    <a href="#services" onclick="toggleMobileMenu()" class="py-2 text-stone-700">Services</a>
+                    <a href="#pricing" onclick="toggleMobileMenu()" class="py-2 text-stone-700">Pricing</a>
+                    <a href="#why-us" onclick="toggleMobileMenu()" class="py-2 text-stone-700">Why Choose Us</a>
+                    <a href="#contact" onclick="toggleMobileMenu()" class="py-2 text-stone-700">Get In Touch</a>
+
+                    <div class="pt-4 border-t">
+                        <a href="tel:7094279888"
+                           class="flex items-center justify-center gap-x-2 w-full bg-[#2e5c3f] text-white font-semibold py-4 rounded-2xl">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>CALL NOW: (709) 427-9888</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg text-white py-24 md:py-32">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-x-2 bg-white/20 backdrop-blur-md text-white text-sm font-medium px-6 py-2.5 rounded-3xl mb-6">
+                <i class="fa-solid fa-leaf"></i>
+                LOCAL • RELIABLE • NEWFOUNDLAND
+            </div>
+
+            <h1 class="heading-font text-5xl md:text-6xl font-bold leading-none tracking-tighter max-w-3xl mx-auto">
+                Premium Firewood.<br>Delivered to Your Door.
+            </h1>
+
+            <p class="mt-6 text-xl md:text-2xl max-w-xl mx-auto text-white/90">
+                Milton Hardwoods, owned and operated by Oliver Stanley.
+                <span class="font-semibold">$175 per cord</span> — delivery included.
+                No pick-ups. Just quality wood, straight to you.
+            </p>
+
+            <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="tel:7094279888"
+                   class="w-full sm:w-auto flex items-center justify-center gap-x-3 bg-white text-[#2e5c3f] hover:bg-amber-50 font-semibold text-lg px-10 py-6 rounded-3xl transition-all shadow-xl">
+                    <i class="fa-solid fa-phone text-2xl"></i>
+                    <div>
+                        CALL OLIVER NOW<br>
+                        <span class="text-2xl">(709) 427-9888</span>
+                    </div>
+                </a>
+
+                <a href="#contact"
+                   class="w-full sm:w-auto flex items-center justify-center gap-x-3 border-2 border-white text-white hover:bg-white/10 font-semibold text-lg px-10 py-6 rounded-3xl transition-all">
+                    <i class="fa-solid fa-envelope"></i>
+                    SEND A MESSAGE
+                </a>
+            </div>
+
+            <div class="mt-16 flex items-center justify-center gap-x-8 text-sm">
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-check text-emerald-300"></i>
+                    <span>Seasoned &amp; Ready to Burn</span>
+                </div>
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-check text-emerald-300"></i>
+                    <span>Same-Week Delivery</span>
+                </div>
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-check text-emerald-300"></i>
+                    <span>Serving St. John’s &amp; Surrounding Areas</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TRUST BAR -->
+    <div class="bg-white py-6 border-b">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-3 md:grid-cols-6 gap-6 text-center items-center text-xs uppercase tracking-widest text-stone-500">
+            <div class="flex flex-col items-center">
+                <i class="fa-solid fa-truck text-2xl mb-1 text-[#2e5c3f]"></i>
+                DELIVERY INCLUDED
+            </div>
+            <div class="flex flex-col items-center">
+                <i class="fa-solid fa-leaf text-2xl mb-1 text-[#2e5c3f]"></i>
+                PREMIUM SEASONED WOOD
+            </div>
+            <div class="flex flex-col items-center">
+                <i class="fa-solid fa-shield-halved text-2xl mb-1 text-[#2e5c3f]"></i>
+                100% LOCAL
+            </div>
+            <div class="flex flex-col items-center">
+                <i class="fa-solid fa-clock text-2xl mb-1 text-[#2e5c3f]"></i>
+                FAST &amp; RELIABLE
+            </div>
+            <div class="flex flex-col items-center">
+                <i class="fa-solid fa-fire text-2xl mb-1 text-[#2e5c3f]"></i>
+                PERFECT FOR STOVES &amp; FIRE PITS
+            </div>
+            <div class="flex flex-col items-center">
+                <i class="fa-solid fa-handshake text-2xl mb-1 text-[#2e5c3f]"></i>
+                FAMILY OWNED
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT OLIVER -->
+    <section id="about" class="py-20 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="px-4 py-2 bg-[#2e5c3f] text-white text-sm rounded-3xl">Meet Oliver Stanley</span>
+                    <h2 class="section-header heading-font text-4xl font-semibold text-stone-900 mt-6 leading-tight">
+                        Your local firewood expert for 10+ years
+                    </h2>
+                    <div class="prose mt-8 text-stone-600 text-lg">
+                        <p>Hi, I'm Oliver Stanley. I own and operate Milton Hardwoods right here in Newfoundland. Every cord I cut and deliver comes from sustainable local sources and is carefully seasoned so it burns hot and clean.</p>
+                        <p>I started this business because I believe in honest work, fair pricing, and making sure families and businesses stay warm all winter long. No middlemen, no hidden fees — just quality wood and dependable delivery.</p>
+                    </div>
+                    <div class="mt-8 flex items-center gap-x-6">
+                        <div class="flex -space-x-4">
+                            <div class="w-9 h-9 bg-amber-200 rounded-2xl flex items-center justify-center text-amber-800 text-sm font-bold">NL</div>
+                            <div class="w-9 h-9 bg-emerald-200 rounded-2xl flex items-center justify-center text-emerald-800 text-sm font-bold">CA</div>
+                        </div>
+                        <p class="text-stone-500">Proudly serving Newfoundland &amp; Labrador homeowners, cottages, and small businesses since 2015.</p>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="aspect-video bg-stone-200 rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="https://picsum.photos/id/1016/800/600" alt="Oliver Stanley standing beside stacked firewood"
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="text-[#2e5c3f] font-semibold tracking-widest">WHAT WE OFFER</span>
+                <h2 class="section-header heading-font text-4xl font-semibold text-stone-900 mt-3">Premium Firewood Services</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="border border-stone-200 hover:border-[#2e5c3f] rounded-3xl p-8 transition-colors group">
+                    <div class="w-12 h-12 bg-[#2e5c3f]/10 text-[#2e5c3f] rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">Firewood Cutting</h3>
+                    <p class="text-stone-600">We source only the best local hardwood and softwood mix. Every piece is hand-selected and cut to perfect stove or fireplace length.</p>
+                </div>
+
+                <div class="border border-stone-200 hover:border-[#2e5c3f] rounded-3xl p-8 transition-colors group">
+                    <div class="w-12 h-12 bg-[#2e5c3f]/10 text-[#2e5c3f] rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">Seasoning &amp; Splitting</h3>
+                    <p class="text-stone-600">All our wood is properly seasoned for at least 8–12 months. Split and ready to burn with maximum heat and minimal smoke.</p>
+                </div>
+
+                <div class="border border-stone-200 hover:border-[#2e5c3f] rounded-3xl p-8 transition-colors group">
+                    <div class="w-12 h-12 bg-[#2e5c3f]/10 text-[#2e5c3f] rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">Delivery Only</h3>
+                    <p class="text-stone-600">Delivery is included in every order. We bring the wood right to your home, cottage, or business. No customer pick-ups.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="py-20 bg-[#2e5c3f] text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-7">
+                    <h2 class="heading-font text-4xl font-semibold">Transparent Pricing — No Surprises</h2>
+                    <div class="mt-8 bg-white/10 backdrop-blur rounded-3xl p-8 flex items-baseline gap-x-6">
+                        <div class="text-7xl font-bold">$175</div>
+                        <div>
+                            <div class="text-3xl font-medium">per cord</div>
+                            <div class="text-emerald-200 text-lg">Standard delivery included</div>
+                        </div>
+                    </div>
+
+                    <ul class="mt-10 space-y-6">
+                        <li class="flex items-start gap-x-4">
+                            <i class="fa-solid fa-circle-check mt-1 text-emerald-300"></i>
+                            <div>
+                                <strong>One cord</strong> = 128 cubic feet of stacked firewood
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-x-4">
+                            <i class="fa-solid fa-circle-check mt-1 text-emerald-300"></i>
+                            <div>Delivery anywhere in the St. John’s metro area and surrounding communities</div>
+                        </li>
+                        <li class="flex items-start gap-x-4">
+                            <i class="fa-solid fa-circle-check mt-1 text-emerald-300"></i>
+                            <div>Additional cords are the same rate — volume discounts available for 5+ cords</div>
+                        </li>
+                        <li class="flex items-start gap-x-4">
+                            <i class="fa-solid fa-circle-check mt-1 text-emerald-300"></i>
+                            <div class="text-amber-200">Cash or e-transfer only • No hidden delivery fees • No pick-up option</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-5 bg-white text-stone-900 rounded-3xl p-10">
+                    <div class="text-center mb-8">
+                        <span class="uppercase text-xs tracking-widest bg-amber-100 text-amber-800 px-4 py-1 rounded-3xl">Most Popular</span>
+                    </div>
+                    <h3 class="text-3xl font-semibold text-center">Order Today</h3>
+                    <p class="text-center text-stone-600 mt-3">Call or fill out the form below to lock in your winter supply.</p>
+
+                    <div class="mt-8 text-center">
+                        <a href="tel:7094279888" class="inline-flex items-center justify-center text-2xl font-semibold gap-x-4 text-[#2e5c3f] hover:scale-105 transition">
+                            <i class="fa-solid fa-phone"></i>
+                            (709) 427-9888
+                        </a>
+                    </div>
+                    <p class="text-xs text-center text-stone-500 mt-6">Same-week delivery available in most areas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="why-us" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="section-header heading-font text-4xl font-semibold text-stone-900">Why Newfoundlanders Choose Milton Hardwoods</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="mx-auto w-16 h-16 rounded-2xl bg-[#2e5c3f]/10 flex items-center justify-center text-4xl mb-6">🌲</div>
+                    <h4 class="font-semibold text-xl">Locally Sourced</h4>
+                    <p class="mt-3 text-stone-600">Wood cut from sustainable Newfoundland forests — supporting our local economy.</p>
+                </div>
+                <div class="text-center">
+                    <div class="mx-auto w-16 h-16 rounded-2xl bg-[#2e5c3f]/10 flex items-center justify-center text-4xl mb-6">🔥</div>
+                    <h4 class="font-semibold text-xl">Properly Seasoned</h4>
+                    <p class="mt-3 text-stone-600">Burns hotter, cleaner, and longer than green wood.</p>
+                </div>
+                <div class="text-center">
+                    <div class="mx-auto w-16 h-16 rounded-2xl bg-[#2e5c3f]/10 flex items-center justify-center text-4xl mb-6">🚚</div>
+                    <h4 class="font-semibold text-xl">Delivery Included</h4>
+                    <p class="mt-3 text-stone-600">We handle everything. Just tell us where you need it.</p>
+                </div>
+                <div class="text-center">
+                    <div class="mx-auto w-16 h-16 rounded-2xl bg-[#2e5c3f]/10 flex items-center justify-center text-4xl mb-6">🤝</div>
+                    <h4 class="font-semibold text-xl">Personal Service</h4>
+                    <p class="mt-3 text-stone-600">When you call, you speak directly to Oliver. Real person, real answers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="py-16 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center text-stone-500 text-sm font-medium mb-6">WHAT OUR CUSTOMERS SAY</div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-sm">
+                    <p class="italic">"Oliver delivered two cords last week and the wood was perfect. Stacked neatly and burns beautifully in our wood stove. Will definitely use him again this winter!"</p>
+                    <div class="mt-8 flex items-center gap-x-3">
+                        <div class="w-10 h-10 bg-amber-100 rounded-2xl"></div>
+                        <div>
+                            <div class="font-semibold">Sarah Murphy</div>
+                            <div class="text-xs text-stone-500">Paradise, NL</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm">
+                    <p class="italic">"Fast, friendly, and fair price. The delivery guy even helped move the wood to our backyard. Best firewood service on the island!"</p>
+                    <div class="mt-8 flex items-center gap-x-3">
+                        <div class="w-10 h-10 bg-emerald-100 rounded-2xl"></div>
+                        <div>
+                            <div class="font-semibold">Mike O’Toole</div>
+                            <div class="text-xs text-stone-500">Mount Pearl, NL</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm">
+                    <p class="italic">"We use Oliver’s wood for our fire pit every weekend. Always consistent quality and he always answers the phone himself. Highly recommend."</p>
+                    <div class="mt-8 flex items-center gap-x-3">
+                        <div class="w-10 h-10 bg-sky-100 rounded-2xl"></div>
+                        <div>
+                            <div class="font-semibold">Lisa &amp; John Power</div>
+                            <div class="text-xs text-stone-500">Conception Bay South, NL</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12">
+                <!-- Left column -->
+                <div class="lg:col-span-5">
+                    <h2 class="heading-font text-4xl font-semibold">Ready to order your firewood?</h2>
+                    <p class="mt-4 text-xl text-stone-600">Call Oliver directly or send us a quick message. We usually respond the same day.</p>
+
+                    <div class="mt-12 space-y-8">
+                        <div class="flex gap-x-5">
+                            <i class="fa-solid fa-phone text-4xl text-[#2e5c3f]"></i>
+                            <div>
+                                <div class="font-semibold text-xl">(709) 427-9888</div>
+                                <div class="text-stone-500">Call or text — Oliver answers personally</div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-x-5">
+                            <i class="fa-solid fa-envelope text-4xl text-[#2e5c3f]"></i>
+                            <div>
+                                <div class="font-semibold text-xl">miltonhardwoods@outlook.com</div>
+                                <div class="text-stone-500">Or email us anytime</div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-x-5">
+                            <i class="fa-solid fa-location-dot text-4xl text-[#2e5c3f]"></i>
+                            <div>
+                                <div class="font-semibold text-xl">St. John’s, Newfoundland &amp; Labrador</div>
+                                <div class="text-stone-500">Proudly serving the entire Avalon Peninsula</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-16 text-sm text-stone-500">
+                        <strong>Business hours:</strong> Monday–Saturday 7am–6pm<br>
+                        Same-week delivery for orders placed by Thursday.
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="lg:col-span-7 bg-stone-50 rounded-3xl p-8 md:p-12">
+                    <form id="contact-form" onsubmit="handleSubmit(event)" class="space-y-8">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-stone-600 mb-2">Your Name</label>
+                                <input type="text" id="name" required
+                                       class="w-full px-5 py-4 bg-white border border-transparent focus:border-[#2e5c3f] rounded-2xl outline-none text-lg">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-stone-600 mb-2">Phone Number</label>
+                                <input type="tel" id="phone" required
+                                       class="w-full px-5 py-4 bg-white border border-transparent focus:border-[#2e5c3f] rounded-2xl outline-none text-lg">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-stone-600 mb-2">How many cords do you need?</label>
+                            <select id="cords" class="w-full px-5 py-4 bg-white border border-transparent focus:border-[#2e5c3f] rounded-2xl outline-none text-lg">
+                                <option value="">Select amount</option>
+                                <option value="1">1 cord</option>
+                                <option value="2" selected>2 cords</option>
+                                <option value="3">3 cords</option>
+                                <option value="4">4 cords</option>
+                                <option value="5+">5+ cords (volume discount)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-stone-600 mb-2">Delivery Address or Location</label>
+                            <input type="text" id="address" placeholder="e.g. 123 Main Street, Paradise, NL" required
+                                   class="w-full px-5 py-4 bg-white border border-transparent focus:border-[#2e5c3f] rounded-2xl outline-none text-lg">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-stone-600 mb-2">Message / Any special requests?</label>
+                            <textarea id="message" rows="4" placeholder="When do you need the wood by?"
+                                      class="w-full px-5 py-4 bg-white border border-transparent focus:border-[#2e5c3f] rounded-3xl outline-none text-lg resize-y"></textarea>
+                        </div>
+
+                        <button type="submit"
+                                class="w-full bg-[#2e5c3f] hover:bg-[#234a32] text-white font-semibold text-xl py-7 rounded-3xl transition flex items-center justify-center gap-x-3">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            SEND MY REQUEST — OLIVER WILL CALL YOU
+                        </button>
+
+                        <p class="text-center text-xs text-stone-500">We respect your privacy. You will only hear from Oliver.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <div class="bg-gradient-to-r from-[#2e5c3f] to-[#1f3f2b] py-16 text-white text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <p class="text-3xl font-medium">Don’t wait until the snow flies.</p>
+            <p class="text-2xl mt-3">Secure your winter firewood today.</p>
+            <a href="tel:7094279888"
+               class="mt-8 inline-flex items-center justify-center gap-x-4 bg-white text-[#2e5c3f] hover:bg-amber-50 text-2xl font-semibold px-16 py-7 rounded-3xl">
+                <i class="fa-solid fa-phone"></i>
+                (709) 427-9888
+            </a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-stone-900 text-stone-400 py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-y-10">
+                <div class="md:col-span-5">
+                    <div class="flex items-center gap-x-3 text-white">
+                        <div class="w-9 h-9 bg-white text-[#2e5c3f] rounded-2xl flex items-center justify-center text-3xl">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <span class="heading-font text-3xl font-bold">Milton Hardwoods</span>
+                    </div>
+                    <p class="mt-4 max-w-xs text-sm">Premium firewood delivered across Newfoundland and Labrador. Owned and operated by Oliver Stanley.</p>
+                    <p class="mt-8 text-xs">© 2026 Milton Hardwoods. All rights reserved.</p>
+                </div>
+
+                <div class="md:col-span-2">
+                    <div class="uppercase text-xs tracking-widest mb-4">Quick Links</div>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#about" class="hover:text-white">About Oliver</a></li>
+                        <li><a href="#services" class="hover:text-white">Our Services</a></li>
+                        <li><a href="#pricing" class="hover:text-white">Pricing &amp; Delivery</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-2">
+                    <div class="uppercase text-xs tracking-widest mb-4">Contact</div>
+                    <a href="tel:7094279888" class="block hover:text-white text-lg">(709) 427-9888</a>
+                    <a href="mailto:miltonhardwoods@outlook.com" class="block hover:text-white mt-2">miltonhardwoods@outlook.com</a>
+                    <div class="mt-6 text-xs">St. John’s, NL</div>
+                </div>
+
+                <div class="md:col-span-3 text-xs">
+                    This website was built to help generate phone calls and qualified leads for Milton Hardwoods.
+                    <span class="block mt-6 text-emerald-300">Designed with care for Newfoundland winters.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu')
+            const icon = document.getElementById('menu-icon')
+
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden')
+                icon.classList.replace('fa-bars', 'fa-xmark')
+            } else {
+                menu.classList.add('hidden')
+                icon.classList.replace('fa-xmark', 'fa-bars')
+            }
+        }
+
+        // Form submission handler
+        function handleSubmit(e) {
+            e.preventDefault()
+            const name = document.getElementById('name').value
+            const phone = document.getElementById('phone').value
+
+            alert(`✅ Thank you, ${name}!\n\nOliver Stanley from Milton Hardwoods will call you at ${phone} within the next few hours to confirm your firewood order.\n\nPayment options: Cash or e-transfer only.`)
+            e.target.reset()
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+    </script>
+</body>
+</html>
